@@ -1,0 +1,23 @@
+@use '../ulti' as *;
+.footer {
+  height: 10vh;
+  &__container {
+    @include breakpoint(medium) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__nav {
+    margin: rem(20) 0;
+    &--main {
+      display: flex;
+      justify-content: space-between;
+      gap: rem(20);
+    }
+    &--item {
+      color: #b6b7b7;
+    }
+  }
+}

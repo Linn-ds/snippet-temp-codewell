@@ -1,0 +1,9 @@
+@use '../ulti' as *;
+
+.background {
+  background: url(../img/Background.png);
+  @include breakpoint(medium) {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

@@ -1,0 +1,14 @@
+@use '../ulti' as *;
+
+.header {
+  // position: sticky;
+  // top: rem(20);
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &__img {
+    display: block;
+    height: inherit;
+  }
+}

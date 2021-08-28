@@ -1,0 +1,44 @@
+@use '../ulti' as *;
+.nav {
+  &__hamburger {
+    display: block;
+    @include breakpoint(medium) {
+      display: none;
+    }
+    padding: 10px;
+  }
+
+  &__main {
+    display: none;
+    @include breakpoint(medium) {
+      display: flex;
+      gap: rem(20);
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--img {
+      padding: rem(10);
+    }
+
+    &--btn {
+      background: #1a1a1a;
+      color: #b6b7b7;
+      padding: rem(15) rem(20);
+      border-radius: rem(5);
+
+      span {
+        color: #fff;
+        @include transition-ease;
+
+        &:hover {
+          color: #b6b7b7;
+        }
+      }
+    }
+  }
+}
